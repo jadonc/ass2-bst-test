@@ -752,6 +752,56 @@ void test_BrianHou() {
     cout << b2 << endl;
 }
 
+void test_jadonc(){
+	std::cout << "Beginning test_jadonc()." << std::endl;
+	
+	std::cout << "Testing 'Add()' and 'Contains()' " << std::endl;
+	
+	BST<string> bs1;
+	BST<string> bs2;
+	BST<string> bs3;
+	
+	//add items to each of bs1, bs2 and bs3
+	bs1.Add("z");
+	bs1.Add("y");
+	bs1.Add("x");
+	bs1.Add("w");
+	bs1.Add("v");
+	
+	bs2.Add("u");
+	bs2.Add("t");
+	bs2.Add("s");
+	bs2.Add("r");
+	bs2.Add("q");
+	
+	bs3.Add("p");
+	bs3.Add("o");
+	bs3.Add("n");
+	bs3.Add("m");
+	bs3.Add("l");
+	
+	//ensure Contains() returns true for added items and false for non-added items
+	assert(bs1.Contains("z");
+	assert(bs1.Contains("y");
+	assert(bs1.Contains("x");
+	assert(bs1.Contains("w");
+	assert(bs1.Contains("v");
+	
+	assert(!bs2.Contains("a");
+	assert(!bs2.Contains("b");
+	assert(bs2.Contains("u");
+	assert(bs2.Contains("t");
+	assert(bs2.Contains("s");
+	
+	assert(bs3.Contains("p");
+	assert(bs3.Contains("o");
+	assert(bs3.Contains("n");
+	assert(bs3.Contains("m");
+	assert(bs3.Contains("l");
+	
+	std::cout << "Tests for test_jadonc() have finished." << std::endl;
+}	
+	
 void test_jstew701() {
   cout << "Starting test_jstew701" << endl;
   cout << "* Testing Add, Contains, and Clear" << endl;
@@ -1110,6 +1160,7 @@ void testBSTAll() {
   test_bazenn01();
   test_khiam01();
   test_mkhsu01();
+  test_jadonc()
 }
 
 TEST_CASE("BST Tests") {
